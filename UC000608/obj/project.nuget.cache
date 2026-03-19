@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "RK9EM/C4LOM=",
+  "dgSpecHash": "XwDoT4dz4TQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\maria\\source\\repos\\marcomendes999-cmd\\UC000608\\UC000608\\UC000608.csproj",
+  "projectFilePath": "C:\\Dev\\UC000608\\UC000608\\UC000608.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\maria\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.3\\microsoft.entityframeworkcore.10.0.3.nupkg.sha512",
-    "C:\\Users\\maria\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.3\\microsoft.entityframeworkcore.abstractions.10.0.3.nupkg.sha512",
-    "C:\\Users\\maria\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.3\\microsoft.entityframeworkcore.analyzers.10.0.3.nupkg.sha512"
+    "C:\\Users\\Utilizador\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.3\\microsoft.entityframeworkcore.10.0.3.nupkg.sha512",
+    "C:\\Users\\Utilizador\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.3\\microsoft.entityframeworkcore.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\Utilizador\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.3\\microsoft.entityframeworkcore.analyzers.10.0.3.nupkg.sha512"
   ],
   "logs": []
 }
