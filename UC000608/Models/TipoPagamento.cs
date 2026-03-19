@@ -4,7 +4,7 @@
     {
         public int IdTipoPagamento { get; set; }
         public string Descricao { get; set; }
-        public double PorcentagemDesconto { get; set; }
+        public double PercentagemDesconto { get; set; }
 
     }
 }
