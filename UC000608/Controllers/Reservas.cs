@@ -20,7 +20,7 @@
             NomeDoInstrutor = nomeDoInstrutor;
         }
 
-        // Método para exibir os dados (opcional)
+        // Método para exibir os dados
         public void ExibirReserva()
         {
             Console.WriteLine($"Aula: {NomeDaAula}");
