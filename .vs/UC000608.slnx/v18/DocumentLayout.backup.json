@@ -46,8 +46,7 @@
               "RelativeToolTip": "UC000608\\Controllers\\Reservas.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA5wBYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T21:23:34.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T21:23:34.318Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "UC000608\\Controllers\\UserController.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAQwFUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T20:19:33.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T20:19:33.735Z"
             },
             {
               "$type": "Document",
@@ -72,8 +70,7 @@
               "RelativeToolTip": "UC000608\\Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-19T11:22:51.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T11:22:51.282Z"
             },
             {
               "$type": "Document",
@@ -85,8 +82,7 @@
               "RelativeToolTip": "UC000608\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-19T11:22:33.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T11:22:33.736Z"
             },
             {
               "$type": "Document",
@@ -96,7 +92,7 @@
               "RelativeDocumentMoniker": "UC000608\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Dev\\UC000608\\UC000608\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "UC000608\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-19T10:08:10.002Z",
               "EditorCaption": ""
@@ -111,8 +107,7 @@
               "RelativeToolTip": "UC000608\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T18:51:39.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T18:51:39.513Z"
             }
           ]
         }
