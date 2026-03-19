@@ -19,3 +19,7 @@ UC000608/bin/Debug/net10.0/UC000608.dll
 .vs/UC000608.slnx/v18/DocumentLayout.backup.json
 .vs/UC000608.slnx/v18/.suo
 .vs/UC000608.slnx/FileContentIndex/1271ea73-9c75-4fae-bea2-eeb7ed94b747.vsidx
+/.vs/UC000608/CopilotIndices/18.4.106.63888/CodeChunks.db-wal
+/.vs/UC000608/CopilotIndices/18.4.106.63888/SemanticSymbols.db-wal
+*.vsidx
+*.cache
