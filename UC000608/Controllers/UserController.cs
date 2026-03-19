@@ -12,7 +12,7 @@ namespace UC000608.Controllers
             User user1 = new User
             { 
                 Id = 1,
-                Name = "António Miranda"
+                Name = "António Miranda Paula"
             };
 
             listausers.Add(user1);
