@@ -1,0 +1,28 @@
+﻿@using UC000608.Models;
+
+@model List<User>
+
+
+    <table>
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+           Nome
+        </th>
+    </tr>
+        @foreach( var item in Model)
+        {
+        <tr>
+            <td>
+                @item.Id
+            </td>
+            <td>
+                @item.Name
+            </td>
+        </tr>
+            
+        }
+   
+</table>
