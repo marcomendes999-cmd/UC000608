@@ -1,21 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\",
+  "WorkspaceRootPath": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{50E7701C-5F36-8369-D273-C821DD9627BD}|UC000608\\UC000608.csproj|c:\\users\\utilizador\\documents\\github\\uc000608\\uc000608\\uc000608\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{50E7701C-5F36-8369-D273-C821DD9627BD}|UC000608\\UC000608.csproj|c:\\users\\utilizador\\documents\\github\\uc000608\\uc000608\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{50E7701C-5F36-8369-D273-C821DD9627BD}|UC000608\\UC000608.csproj|solutionrelative:uc000608\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50E7701C-5F36-8369-D273-C821DD9627BD}|UC000608\\UC000608.csproj|c:\\users\\utilizador\\documents\\github\\uc000608\\uc000608\\uc000608\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{50E7701C-5F36-8369-D273-C821DD9627BD}|UC000608\\UC000608.csproj|solutionrelative:uc000608\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{50E7701C-5F36-8369-D273-C821DD9627BD}|UC000608\\UC000608.csproj|c:\\users\\utilizador\\documents\\github\\uc000608\\uc000608\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50E7701C-5F36-8369-D273-C821DD9627BD}|UC000608\\UC000608.csproj|solutionrelative:uc000608\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50E7701C-5F36-8369-D273-C821DD9627BD}|UC000608\\UC000608.csproj|c:\\users\\utilizador\\documents\\github\\uc000608\\uc000608\\uc000608\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{50E7701C-5F36-8369-D273-C821DD9627BD}|UC000608\\UC000608.csproj|solutionrelative:uc000608\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{50E7701C-5F36-8369-D273-C821DD9627BD}|UC000608\\UC000608.csproj|c:\\users\\utilizador\\documents\\github\\uc000608\\uc000608\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50E7701C-5F36-8369-D273-C821DD9627BD}|UC000608\\UC000608.csproj|solutionrelative:uc000608\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50E7701C-5F36-8369-D273-C821DD9627BD}|UC000608\\UC000608.csproj|c:\\users\\utilizador\\documents\\github\\uc000608\\uc000608\\uc000608\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{50E7701C-5F36-8369-D273-C821DD9627BD}|UC000608\\UC000608.csproj|c:\\users\\utilizador\\documents\\github\\uc000608\\uc000608\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50E7701C-5F36-8369-D273-C821DD9627BD}|UC000608\\UC000608.csproj|solutionrelative:uc000608\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50E7701C-5F36-8369-D273-C821DD9627BD}|UC000608\\UC000608.csproj|c:\\users\\utilizador\\documents\\github\\uc000608\\uc000608\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50E7701C-5F36-8369-D273-C821DD9627BD}|UC000608\\UC000608.csproj|solutionrelative:uc000608\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,58 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\UC000608\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "UC000608\\Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\UC000608\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "UC000608\\Views\\Home\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\Models\\User.cs",
+              "RelativeDocumentMoniker": "UC000608\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\Models\\User.cs",
+              "RelativeToolTip": "UC000608\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T19:19:25.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "UC000608\\Views\\User\\Index.cshtml",
+              "ToolTip": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "UC000608\\Views\\User\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-19T11:22:51.282Z",
+              "WhenOpened": "2026-03-19T19:16:21.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\UC000608\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "UC000608\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\UC000608\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "UC000608\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-19T11:22:33.736Z",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "UC000608\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\Controllers\\UserController.cs",
+              "RelativeToolTip": "UC000608\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T19:15:43.08Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\UC000608\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "UC000608\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\UC000608\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "UC000608\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-19T10:08:10.002Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\UC000608\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "UC000608\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\UC000608\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\utilizador\\Documents\\GitHub\\UC000608\\UC000608\\Controllers\\HomeController.cs",
               "RelativeToolTip": "UC000608\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T18:51:39.513Z"
+              "WhenOpened": "2026-02-19T18:51:39.513Z",
+              "EditorCaption": ""
             }
           ]
         }
