@@ -1,21 +1,43 @@
-.vs/UC000608.slnx/FileContentIndex/1271ea73-9c75-4fae-bea2-eeb7ed94b747.vsidx
-.vs/UC000608.slnx/FileContentIndex/2fc7ba79-b224-49e3-91b9-b74a33b77943.vsidx
-.vs/UC000608.slnx/FileContentIndex/539ec555-74a2-4256-93b1-642276c6e03f.vsidx
-.vs/UC000608.slnx/FileContentIndex/b1c1e1e2-1053-44cc-853a-9c73006d2dbd.vsidx
-.vs/UC000608.slnx/FileContentIndex/d9051167-5308-4e88-b682-49e68c986497.vsidx
-.vs/UC000608.slnx/FileContentIndex/e9bb83fd-e1d0-43d9-b0dd-8daff7cdec26.vsidx
-.vs/UC000608.slnx/v18/.suo
-.vs/UC000608.slnx/v18/DocumentLayout.backup.json
-.vs/UC000608.slnx/v18/DocumentLayout.json
-UC000608/bin/Debug/net10.0/UC000608.dll
-UC000608/bin/Debug/net10.0/UC000608.exe
-UC000608/bin/Debug/net10.0/UC000608.pdb
-UC000608/bin/Debug/net10.0/UC000608.staticwebassets.runtime.json
-UC000608/bin/Debug/net10.0/UC000608.staticwebassets.runtime.json
-UC000608/bin/Debug/net10.0/UC000608.pdb
-UC000608/bin/Debug/net10.0/UC000608.exe
-UC000608/bin/Debug/net10.0/UC000608.dll
-.vs/UC000608.slnx/v18/DocumentLayout.json
-.vs/UC000608.slnx/v18/DocumentLayout.backup.json
-.vs/UC000608.slnx/v18/.suo
-.vs/UC000608.slnx/FileContentIndex/1271ea73-9c75-4fae-bea2-eeb7ed94b747.vsidx
+# =========================
+# Build folders
+# =========================
+bin/
+obj/
+
+# =========================
+# Visual Studio
+# =========================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDEs (opcional)
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Publish
+# =========================
+publish/
+wwwroot/dist/
+
+# =========================
+# NuGet
+# =========================
+*.nupkg
+packages/
