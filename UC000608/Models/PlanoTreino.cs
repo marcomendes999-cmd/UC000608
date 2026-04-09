@@ -1,6 +1,6 @@
 ﻿namespace UC000608.Models
 {
-    public class PlanoTreino
+    public class PlanoTreino //comentario
     {
         public int Id { get; set; }
         public string? Nome { get; set; }
