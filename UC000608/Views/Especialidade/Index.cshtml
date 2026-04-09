@@ -1,0 +1,22 @@
+﻿@model IEnumerable<UC000608.Models.Especialidade>
+
+<div class="container mt-4">
+    <h2>Especialidade</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+             </tr>
+        </thead>
+        <tbody>
+            @foreach (var plano in Model)
+            {
+                <tr>
+                    <td>@plano.Nome</td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
