@@ -6,7 +6,12 @@ namespace UC000608.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            List<string> listaEstados = new List<string>();
+
+            listaEstados.Add("Iniciado");
+            listaEstados.Add("Terminado");
+
+            return View(listaEstados);
         }
     }
 }
