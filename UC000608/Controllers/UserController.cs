@@ -12,61 +12,61 @@ namespace UC000608.Controllers
             User user1 = new User
             {
                 Id = 1,
-                Nome = "António Miranda"
+                Name = "António Miranda"
             };
 
             User user2 = new User
             {
                 Id = 2,
-                Nome = "Maria Silva"
+                Name = "Maria Silva"
             };
 
             User user3 = new User
             {
                 Id = 3,
-                Nome = "João Santos"
+                Name = "João Santos"
             };
 
             User user4 = new User
             {
                 Id = 4,
-                Nome = "Ana Costa"
+                Name = "Ana Costa"
             };
 
             User user5 = new User
             {
                 Id = 5,
-                Nome = "Pedro Ferreira"
+                Name = "Pedro Ferreira"
             };
 
             User user6 = new User
             {
                 Id = 6,
-                Nome = "Sofia Almeida"
+                Name = "Sofia Almeida"
             };
 
             User user7 = new User
             {
                 Id = 7,
-                Nome = "Carlos Rodrigues"
+                Name = "Carlos Rodrigues"
             };
 
             User user8 = new User
             {
                 Id = 8,
-                Nome = "Beatriz Martins"
+                Name = "Beatriz Martins"
             };
 
             User user9 = new User
             {
                 Id = 9,
-                Nome = "Ricardo Gomes"
+                Name = "Ricardo Gomes"
             };
 
             User user10 = new User
             {
                 Id = 10,
-                Nome = "Inês Carvalho"
+                Name = "Inês Carvalho"
             };
 
             listausers.Add(user1);
