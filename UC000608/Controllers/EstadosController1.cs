@@ -3,7 +3,7 @@ using UC000608.Models;
 
 namespace UC000608.Controllers
 {
-    public class EstadosController1 : Controller
+    public class EstadosController : Controller
     {
         public IActionResult Index()
         {
