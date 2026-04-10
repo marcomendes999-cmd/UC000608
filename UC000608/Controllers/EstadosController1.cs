@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using UC000608.Models;
 
 namespace UC000608.Controllers
 {
@@ -6,10 +7,11 @@ namespace UC000608.Controllers
     {
         public IActionResult Index()
         {
-            List<string> listaEstados = new List<string>();
-
-            listaEstados.Add("Iniciado");
-            listaEstados.Add("Terminado");
+            List<Estados> listaEstados = new List<Estados>()
+            {
+                new Estados { Id = 1, Nome = "Iniciado" },
+                new Estados { Id = 2, Nome = "Terminado" }
+            };
 
             return View(listaEstados);
         }
