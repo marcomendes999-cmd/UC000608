@@ -15,6 +15,7 @@ namespace UC000608.Data
         }
         public DbSet<Plano> Planos { get; set; }
         public DbSet<Membro> Membros { get; set; }
-       
+        public DbSet<Treinador> Treinadores { get; set; }
+
     }
 }
