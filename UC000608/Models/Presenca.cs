@@ -10,7 +10,7 @@ namespace UC000608.Models
 
         // Relação com Aula
         public int AulaId { get; set; }
-        public Aula Aula { get; set; }
+       // public Aula Aula { get; set; }
 
         // Lista de membros presentes
         public List<Membro> Membros { get; private set; }
@@ -22,7 +22,7 @@ namespace UC000608.Models
             Membros = new List<Membro>();
         }
 
-        // Métodos (comportamento)
+        // Método (comportamento)
         public void AdicionarMembro(Membro membro)
         {
             if (!Membros.Contains(membro))
