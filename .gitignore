@@ -41,6 +41,3 @@ wwwroot/dist/
 # =========================
 *.nupkg
 packages/
-/UC000608/Models/ErrorViewModel.cs
-/UC000608/Models/User.cs
-/UC000608/Controllers/UserController.cs

@@ -1,25 +1,6 @@
-﻿@model IEnumerable<UC000608.Models.TipoPlano>
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
 
-<div class="container mt-4">
-    <h2>Tipos de Plano</h2>
-
-    <a class="btn btn-primary mb-3" asp-action="Create">Criar Novo Tipo</a>
-
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Desconto (%)</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var tipo in Model)
-            {
-                <tr>
-                    <td>@tipo.Nome</td>
-                    <td>@tipo.Desconto%</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>
+<p>Use this page to detail your site's privacy policy.</p>
