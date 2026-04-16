@@ -1,0 +1,30 @@
+﻿@model IEnumerable<UC000608.Models.TipoPagamento>
+
+@{
+    ViewData["Title"] = "Tipo de Pagamento";
+}
+
+<h1>TipoPagamento</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                TipoPagamento
+            </th>
+            
+         
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+             </tr>
+        }
+    </tbody>
+</table>
