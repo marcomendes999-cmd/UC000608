@@ -29,7 +29,7 @@
 
         // Relações — o ginásio agrega membros e staff
         public ICollection<Membro> Membros { get; set; } = new List<Membro>();
-        public ICollection<Staff> StaffList { get; set; } = new List<Staff>();
+        //public ICollection<Staff> StaffList { get; set; } = new List<Staff>();
 
         public Ginasio() { }
 
