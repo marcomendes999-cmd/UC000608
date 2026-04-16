@@ -10,7 +10,7 @@ namespace UC000608.Models
 
         // Relação com Aula
         public int AulaId { get; set; }
-        public Aula Aula { get; set; }
+       // public Aula Aula { get; set; }
 
         // Lista de membros presentes
         public List<Membro> Membros { get; private set; }

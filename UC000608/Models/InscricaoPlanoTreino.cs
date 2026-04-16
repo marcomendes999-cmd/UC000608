@@ -23,12 +23,12 @@ namespace UC000608.Models
         public Treinador Treinador { get; set; }
 
         // Construtor
-        public Inscricao(int id, DateTime dtInicio, string estado)
-        {
-            Id = id;
-            DtInicio = dtInicio;
-            Estado = estado;
-        }
+        //public Inscricao(int id, DateTime dtInicio, string estado)
+        //{
+           // Id = id;
+           // DtInicio = dtInicio;
+           // Estado = estado;
+        //}
 
         // Métodos (comportamento)
         public void FinalizarInscricao(DateTime dtFim)
