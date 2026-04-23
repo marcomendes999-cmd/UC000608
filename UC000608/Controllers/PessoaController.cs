@@ -10,23 +10,22 @@ using UC000608.Models;
 
 namespace UC000608.Controllers
 {
-    public class MembroController : Controller
+    public class PessoaController : Controller
     {
         private readonly UC000608Context _context;
 
-        public MembroController(UC000608Context context)
+        public PessoaController(UC000608Context context)
         {
             _context = context;
         }
 
-        // GET: Membro
+        // GET: Pessoa
         public async Task<IActionResult> Index()
         {
-            var uC000608Context = _context.Membros.Include(m => m.Plano);
-            return View(await uC000608Context.ToListAsync());
+            return View(await _context.Pessoa.ToListAsync());
         }
 
-        // GET: Membro/Details/5
+        // GET: Pessoa/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -34,41 +33,38 @@ namespace UC000608.Controllers
                 return NotFound();
             }
 
-            var membro = await _context.Membros
-                .Include(m => m.Plano)
+            var pessoa = await _context.Pessoa
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (membro == null)
+            if (pessoa == null)
             {
                 return NotFound();
             }
 
-            return View(membro);
+            return View(pessoa);
         }
 
-        // GET: Membro/Create
+        // GET: Pessoa/Create
         public IActionResult Create()
         {
-            ViewData["PlanoId"] = new SelectList(_context.Planos, "Id", "Nome");
             return View();
         }
 
-        // POST: Membro/Create
+        // POST: Pessoa/Create
         
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,NrSocio,Ativo,PlanoId")] Membro membro)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Email,Telefone")] Pessoa pessoa)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(membro);
+                _context.Add(pessoa);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PlanoId"] = new SelectList(_context.Planos, "Id", "Nome", membro.PlanoId);
-            return View(membro);
+            return View(pessoa);
         }
 
-        // GET: Membro/Edit/5
+        // GET: Pessoa/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -76,22 +72,21 @@ namespace UC000608.Controllers
                 return NotFound();
             }
 
-            var membro = await _context.Membros.FindAsync(id);
-            if (membro == null)
+            var pessoa = await _context.Pessoa.FindAsync(id);
+            if (pessoa == null)
             {
                 return NotFound();
             }
-            ViewData["PlanoId"] = new SelectList(_context.Set<Plano>(), "Id", "Id", membro.PlanoId);
-            return View(membro);
+            return View(pessoa);
         }
 
-        // POST: Membro/Edit/5
-    
+        // POST: Pessoa/Edit/5
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,NrSocio,Ativo,PlanoId")] Membro membro)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Email,Telefone")] Pessoa pessoa)
         {
-            if (id != membro.Id)
+            if (id != pessoa.Id)
             {
                 return NotFound();
             }
@@ -100,12 +95,12 @@ namespace UC000608.Controllers
             {
                 try
                 {
-                    _context.Update(membro);
+                    _context.Update(pessoa);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!MembroExists(membro.Id))
+                    if (!PessoaExists(pessoa.Id))
                     {
                         return NotFound();
                     }
@@ -116,11 +111,10 @@ namespace UC000608.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PlanoId"] = new SelectList(_context.Set<Plano>(), "Id", "Id", membro.PlanoId);
-            return View(membro);
+            return View(pessoa);
         }
 
-        // GET: Membro/Delete/5
+        // GET: Pessoa/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -128,35 +122,34 @@ namespace UC000608.Controllers
                 return NotFound();
             }
 
-            var membro = await _context.Membros
-                .Include(m => m.Plano)
+            var pessoa = await _context.Pessoa
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (membro == null)
+            if (pessoa == null)
             {
                 return NotFound();
             }
 
-            return View(membro);
+            return View(pessoa);
         }
 
-        // POST: Membro/Delete/5
+        // POST: Pessoa/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var membro = await _context.Membros.FindAsync(id);
-            if (membro != null)
+            var pessoa = await _context.Pessoa.FindAsync(id);
+            if (pessoa != null)
             {
-                _context.Membros.Remove(membro);
+                _context.Pessoa.Remove(pessoa);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool MembroExists(int id)
+        private bool PessoaExists(int id)
         {
-            return _context.Membros.Any(e => e.Id == id);
+            return _context.Pessoa.Any(e => e.Id == id);
         }
     }
 }
