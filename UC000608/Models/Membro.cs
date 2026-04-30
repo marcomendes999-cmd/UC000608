@@ -13,5 +13,9 @@ namespace UC000608.Models
         // ligação ao Plano
         public int PlanoId { get; set; }
         public Plano Plano { get; set; } = null!;
+
+        // Ligação à Pessoa
+        public int PessoaId { get; set; }
+        public Pessoa Pessoa { get; set; } = null!;
     }
 }
