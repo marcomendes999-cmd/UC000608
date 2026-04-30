@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace UC000608.Models
 {
@@ -25,9 +25,9 @@ namespace UC000608.Models
         // Construtor
         //public Inscricao(int id, DateTime dtInicio, string estado)
         //{
-           // Id = id;
-           // DtInicio = dtInicio;
-           // Estado = estado;
+        //    Id = id;
+        //    DtInicio = dtInicio;
+        //    Estado = estado;
         //}
 
         // Métodos (comportamento)

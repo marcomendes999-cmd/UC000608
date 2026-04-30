@@ -2,7 +2,7 @@
 
 namespace UC000608.Models
 {
-    public class Pessoa
+    public class Pessoa 
     {
         public int Id { get; set; }
 
