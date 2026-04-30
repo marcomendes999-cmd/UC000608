@@ -1,0 +1,80 @@
+﻿@using UC000608.Models
+@model List<Entrada>
+
+@{
+    List<Membro> membros = (List<Membro>)ViewBag.Membros;
+}
+<div class="conteiner mt-5">
+
+    @if (TempData["Erro"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Erro"]</div>
+    }
+
+    @if (TempData["Sucesso"] != null)
+    {
+        <div class="alert alert-success">@TempData["Sucesso"]</div>
+    }
+
+    <h2 class="mb-4">Registos de Entrada</h2>
+
+    <button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#modalEntrada">
+        + Registar Entrada
+    </button>
+
+    <table class="table table-bordered">
+        <thead>
+            <th>Nome membro</th>
+            <th>Data</th>
+            <th>Tipo</th>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td> @item.Membro.Nome </td>
+                    <td> @item.DataHora</td>
+                    <td>
+                        @if(item.Tipo == "Entrada")
+                        {
+                            <span class="badge bg-success"> Entrada </span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger"> Saída </span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+    <!-- Modal -->
+    <div class="modal fade" id="modalEntrada" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form asp-action="RegistarEntradas" method="post">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Registar Entradas/Saidas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label class="form-label">Escolha um membro!</label>
+                            <select name="membroId" class="form-select" required>
+                                @foreach (var item in membros)
+                                {
+                                    <option value="@item.Id">@item.Nome</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Registar!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

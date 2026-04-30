@@ -2,6 +2,9 @@
 {
     public class Treinador : Pessoa
     {
-        public string Especialidade { get; set; }
+        public int Id { get; set; }
+
+        public string Especialidade { get; set; } = "";
+
     }
 }

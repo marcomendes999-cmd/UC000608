@@ -1,5 +1,4 @@
-﻿using System.Numerics;
-
+﻿
 namespace UC000608.Models
 {
     public class Membro : Pessoa
@@ -7,10 +6,12 @@ namespace UC000608.Models
         public int Id { get; set; }
 
         public int NrSocio { get; set; }
+
         public bool Ativo { get; set; }
 
-        // Relação com Plano
+
+        // ligação ao Plano
         public int PlanoId { get; set; }
-        public Plano Plano { get; set; }
+        public Plano Plano { get; set; } = null!;
     }
 }
