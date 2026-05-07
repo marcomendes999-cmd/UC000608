@@ -1,6 +1,6 @@
 namespace UC000608.Models
 {
-    public class Treinador
+    public class Treinador : Pessoa
     {
         public int Id { get; set; }
 
