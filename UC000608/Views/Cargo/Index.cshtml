@@ -1,0 +1,21 @@
+﻿@model IEnumerable<UC000608.Models.Cargo>
+
+<div class="container mt-4">
+    <h2>Cargos</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cargo in Model)
+            {
+                <tr>
+                    <td>@cargo.Nome</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
