@@ -7,5 +7,7 @@
         public Decimal Valor { get; set; }
         public TipoPagamento TipoPagamento { get; set; }
 
+        public Membro Membro { get; set; }
+
     }
 }

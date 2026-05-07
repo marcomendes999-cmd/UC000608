@@ -11,6 +11,8 @@ builder.Services.AddDbContext<UC000608Context>(options =>
 
 builder.Services.AddScoped<IMembroService, MembroService>();
 builder.Services.AddScoped<IEntradaService, EntradaService>();
+builder.Services.AddScoped<ITipoPagamentoService, TipoPagamentoService>();
+builder.Services.AddScoped<IPagamentoService, PagamentoService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

@@ -1,8 +1,88 @@
-﻿@model UC000608.Models.Pagamento
+﻿@using UC000608.Models;
+@model List<UC000608.Models.Pagamento>
 
-id=@Model.Id
-Data=@Model.Data
-Valor=@Model.Valor
-TipoPagamento=@Model.TipoPagamento.Nome
+@{
+    List<Membro> membros = (List<Membro>)ViewBag.Membros;
+    List<TipoPagamento> tipopagamento = (List<TipoPagamento>)ViewBag.TipoPagamentos;
+}
+
+<div class="conteiner mt-5">
+
+    @if (TempData["Erro"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Erro"]</div>
+    }
+
+    @if (TempData["Sucesso"] != null)
+    {
+        <div class="alert alert-success">@TempData["Sucesso"]</div>
+    }
 
 
+    <div class="">
+        <h2>Lista Pagamentos</h2>
+    </div>
+
+    <button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#modalPagamento">
+        + Registar Pagamento
+    </button>
+
+    <table class="table table-bordered">
+        <thead>
+            <th>Nome Membro</th>
+            <th>Tipo pagamento</th>
+            <th>Data</th>
+            <th>Estado</th>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td> @item.Membro.Pessoa.Nome </td>
+                <td class="badge bg-info"> @item.TipoPagamento.Nome</td>
+                <td> @item.Data </td>
+                <td class="badge bg-success"> Pago </td>
+            </tr>
+            }
+        </tbody>
+
+    </table>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalPagamento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form asp-action="RegistarPagamento" method="post">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Registar Pagamentos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label class="form-label">Escolha um membro!</label>
+                            <select name="membroId" class="form-select" required>
+                                @foreach (var item in membros)
+                                {
+                                    <option value="@item.Id">@item.Pessoa.Nome</option>
+                                }
+
+                            </select>
+                            <label class="form-label">Tipo pagamento</label>
+                            <select name="tipopagamentoId" class="form-select" required>
+                                @foreach (var item in tipopagamento)
+                                {
+                                    <option value="@item.Id">@item.Nome</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Registar!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

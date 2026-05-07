@@ -8,11 +8,13 @@ namespace UC000608.Controllers
     {
         private readonly IEntradaService _entradaService;
         private readonly IMembroService _membroService;
+        private readonly IPagamentoService _pagamentoService;
 
-        public EntradaController(IEntradaService entradaService, IMembroService membroService)
+        public EntradaController(IEntradaService entradaService, IMembroService membroService, IPagamentoService pagamentoService)
         {
             _entradaService = entradaService;
             _membroService = membroService;
+            _pagamentoService = pagamentoService;
         }
 
 

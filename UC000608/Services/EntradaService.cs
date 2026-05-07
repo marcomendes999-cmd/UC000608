@@ -7,6 +7,12 @@ namespace UC000608.Services
     {
         private static List<Entrada> registos = new List<Entrada>();
 
+        private readonly IPagamentoService _pagamentoService;
+
+        public EntradaService(IPagamentoService pagamentoService)
+        {
+            _pagamentoService = pagamentoService;
+        }
         public string Entrada(Membro membro)
         {
             if(membro == null)
@@ -18,6 +24,9 @@ namespace UC000608.Services
             {
                 return "Membro está inativo!";
             }
+
+            if (!_pagamentoService.ValidarPagamento(membro.Id))
+                return "Membro está com pagamento em atraso!";
 
             var ultimo = registos.Where(r => r.Membro.Id == membro.Id)
                 .OrderByDescending(r => r.DataHora)
