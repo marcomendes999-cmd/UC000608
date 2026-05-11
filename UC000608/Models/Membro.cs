@@ -1,7 +1,6 @@
-
 namespace UC000608.Models
 {
-    public class Membro
+    public class Membro : Pessoa
     {
         public int Id { get; set; }
 
@@ -9,13 +8,10 @@ namespace UC000608.Models
 
         public bool Ativo { get; set; }
 
-
-        // ligação ao Plano
+        // Ligação ao Plano
         public int PlanoId { get; set; }
-        public Plano Plano { get; set; } = null!;
 
-        // Ligação à Pessoa
-        public int PessoaId { get; set; }
-        public Pessoa Pessoa { get; set; } = null!;
+        public Plano Plano { get; set; } = null!;
     }
 }
+
