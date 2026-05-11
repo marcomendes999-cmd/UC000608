@@ -1,42 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using UC000608.Data;
+﻿using Microsoft.AspNetCore.Mvc;
 using UC000608.Models;
+using UC000608.Services;
 
 namespace UC000608.Controllers
 {
     public class MembroController : Controller
     {
-        private readonly UC000608Context _context;
-
-        public MembroController(UC000608Context context)
-        {
-            _context = context;
-        }
+        private readonly MembroService _service = new MembroService();
 
         // GET: Membro
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            var uC000608Context = _context.Membros.Include(m => m.Plano);
-            return View(await uC000608Context.ToListAsync());
+            return View(_service.ObterMembros());
         }
 
         // GET: Membro/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public IActionResult Details(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            var membro = _service.ObterMembroPorID(id);
 
-            var membro = await _context.Membros
-                .Include(m => m.Plano)
-                .FirstOrDefaultAsync(m => m.Id == id);
             if (membro == null)
             {
                 return NotFound();
@@ -48,89 +30,43 @@ namespace UC000608.Controllers
         // GET: Membro/Create
         public IActionResult Create()
         {
-            ViewData["PlanoId"] = new SelectList(_context.Planos, "Id", "Nome");
             return View();
         }
 
         // POST: Membro/Create
-        
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,NrSocio,Ativo,PlanoId")] Membro membro)
+        public IActionResult Create(Membro membro)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(membro);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["PlanoId"] = new SelectList(_context.Planos, "Id", "Nome", membro.PlanoId);
-            return View(membro);
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Membro/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public IActionResult Edit(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            var membro = _service.ObterMembroPorID(id);
 
-            var membro = await _context.Membros.FindAsync(id);
             if (membro == null)
             {
                 return NotFound();
             }
-            ViewData["PlanoId"] = new SelectList(_context.Set<Plano>(), "Id", "Id", membro.PlanoId);
+
             return View(membro);
         }
 
         // POST: Membro/Edit/5
-    
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,NrSocio,Ativo,PlanoId")] Membro membro)
+        public IActionResult Edit(int id, Membro membro)
         {
-            if (id != membro.Id)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(membro);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!MembroExists(membro.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["PlanoId"] = new SelectList(_context.Set<Plano>(), "Id", "Id", membro.PlanoId);
-            return View(membro);
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Membro/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public IActionResult Delete(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            var membro = _service.ObterMembroPorID(id);
 
-            var membro = await _context.Membros
-                .Include(m => m.Plano)
-                .FirstOrDefaultAsync(m => m.Id == id);
             if (membro == null)
             {
                 return NotFound();
@@ -142,21 +78,9 @@ namespace UC000608.Controllers
         // POST: Membro/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public IActionResult DeleteConfirmed(int id)
         {
-            var membro = await _context.Membros.FindAsync(id);
-            if (membro != null)
-            {
-                _context.Membros.Remove(membro);
-            }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-        }
-
-        private bool MembroExists(int id)
-        {
-            return _context.Membros.Any(e => e.Id == id);
         }
     }
 }
