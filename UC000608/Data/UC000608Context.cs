@@ -13,6 +13,7 @@ namespace UC000608.Data
             : base(options)
         {
         }
+        public DbSet<Reserva> Reservas { get; set; }
         public DbSet<Plano> Planos { get; set; }
         public DbSet<Membro> Membros { get; set; }
         public DbSet<Treinador> Treinadores { get; set; }
